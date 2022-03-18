@@ -2,6 +2,7 @@
 
 const sharp = require('sharp');
 const compress_images = require('compress-images');
+const fs = require('fs');
 
 // Resizing image
 
@@ -36,8 +37,17 @@ function (error, completed, statistic) {
     console.log("-------------");
     console.log('image successfully compressed');
 
+    fs.unlink(pathInput, (err)=>{
+      if (err) {
+        console.log(err);
+      }else{
+        console.log(pathInput, 'excluido');
+      }
+    })
+
 });
 
 }
 
-resize(path, './resized/output_resize.jpg', width); 
+resize(path, './temp/output_resize.jpg', width);
+
