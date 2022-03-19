@@ -1,5 +1,5 @@
 # how it was done?
- First of all, the dependencies are being called
+ First of all, the dependencies are being called:
 
 The [sharp](https://sharp.pixelplumbing.com/install) package it helps in the resizing images part;
 
@@ -26,6 +26,7 @@ Parameter to the compress_images function:
  
  In the compress function execution we put the outputPath of the [resize](https://sharp.pixelplumbing.com/install) function and the 
  location where the file will be saved.
+
 
 
 
