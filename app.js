@@ -41,7 +41,7 @@ function (error, completed, statistic) {
       if (err) {
         console.log(err);
       }else{
-        console.log(pathInput, 'excluido');
+        console.log(pathInput, 'deleted');
       }
     })
 

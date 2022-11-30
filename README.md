@@ -28,6 +28,8 @@ Parameter to the compress_images function:
  location where the file will be saved.
 
 
+### Run 
 
+node app 'image file' 'px'
 
 
